@@ -1,0 +1,34 @@
+<ion-view view-title="EDIT YOUR PROFILE" name="">
+	<ion-content class="padding black_bg">
+		<div class="padding list list-dark">
+			<div class="max-width-320">
+				<div class="item item-dark-ex item-avatar item-avatar-block">
+					<span class="item-avatar-block-img">
+						<img src="img/profile1.jpg">
+					</span>
+					<div class="uploadContainer">
+					  	<span class="select-wrapper">
+					  		<span><i class="icon ion-camera"></i></span>
+					    	<input type="file" name="image_src" id="image_src" />
+					  	</span>
+					</div>
+					<h3>Update your Profile picture</h3>
+
+				</div>
+			  	<label class="item item-input">
+				  <input type="text" placeholder="Name" ng-model="data.username">
+			  	</label>
+			  	<label class="item item-input">
+				  <input type="text" placeholder="Phone" ng-model="data.phone">
+			  	</label>
+			  	<label class="item item-input">
+				  <input type="text" placeholder="Address" ng-model="data.address">
+			  	</label>
+			  	<label class="item item-input">
+				  <input type="text" placeholder="Zip" ng-model="data.zip">
+			  	</label>
+				<a href="#" class="button button-block button-calm" >Update</a>
+			</div>
+		</div>	  	
+	</ion-content>
+</ion-view>

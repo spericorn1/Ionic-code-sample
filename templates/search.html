@@ -1,0 +1,60 @@
+<ion-view view-title="QUICK START" name="">
+	<ion-content class="padding black_bg">
+		
+		<div class="padding list list-dark search">
+			<div class="header">
+				<h1>GETTING STARTED</h1>
+				<p>Click down below to specify search</p>
+			</div>
+		
+				<div class="searchOption">
+					<select  class="item item-input item-select item-dark">
+			      		<option selected>Your City</option>
+				        <option>Option 1</option>
+				        <option>Option 2</option>
+				        <option>Option 3</option>
+			      	</select>
+			      	<!-- <label><i class="icon ion-search"></i>Search</label> -->
+				</div>
+
+				<div class="seatRange">
+	                <h3>SEATS</h3>
+	                <input type="text" id="range" value="" name="range" /> 
+	            </div>
+	      
+            <script src="js/ion.rangeSlider.js"></script>
+
+            <script>
+
+                $(function () {
+
+                    $("#range").ionRangeSlider({
+                        hide_min_max: true,
+                        keyboard: true,
+                        min: 1,
+                        max: 50,
+                        from: 10,
+                        to: 20,
+                        type: 'single',
+                        step: 1,
+                        grid: true
+                    });
+
+            	console.log($( "#range" ).val());
+                });
+            </script>
+			<div class="max-width-320">
+				<button class="button button-block button-calm" ng-click=""><i class="icon ion-search"></i>Search</button>
+			</div>
+	    </div>
+		
+	</ion-content>
+</ion-view>
+
+
+	<!-- <ion-header-bar>
+		<div class="bar bar-header bar-dark">
+			<button class="button icon button button-icon ion-ios-arrow-left"></button>
+			<h1 class="title">EDIT YOUR PROFILE</h1>
+		</div>
+	</ion-header-bar> -->
